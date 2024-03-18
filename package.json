@@ -1,18 +1,23 @@
 {
   "name": "tg-bot",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js "
+    "start": "tsc && node index.ts",
+    "dev": "nodemon -T index.ts "
   },
   "dependencies": {
     "dotenv": "^16.4.5",
     "nodemon": "^3.1.0",
-    "telegraf": "^4.16.3"
+    "telegraf": "^4.16.3",
+    "ts-node": "^10.9.2"
   },
   "author": "Sidorenko Dmitry",
   "license": "ISC",
   "description": "",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "typescript": "^5.4.2"
+  }
 }
