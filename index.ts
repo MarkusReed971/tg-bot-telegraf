@@ -27,7 +27,7 @@ bot.on(message('web_app_data'), (context) => {
   const data = JSON.parse(message.web_app_data.data)
   const { country, city, street } = data
 
-  return context.reply(`Страна: ${country}, Город: ${city}, Улица: ${street}`)
+  return context.reply(`Страна: ${country}, Город: ${city}, Улица: ${street}`, Markup.removeKeyboard())
 })
 
 bot.launch()
